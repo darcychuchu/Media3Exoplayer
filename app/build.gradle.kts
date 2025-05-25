@@ -72,4 +72,16 @@ dependencies {
     implementation(libs.androidx.media3.exoplayer)
     implementation(libs.androidx.media3.exoplayer.hls)
     implementation(libs.androidx.media3.ui)
+    implementation(libs.androidx.media3.transformer)
+
+
+    // Testing dependencies
+    testImplementation(libs.mockito.core)
+    testImplementation(libs.mockito.inline) // For mocking final classes/methods if needed
+    testImplementation(libs.robolectric)
+    testImplementation(libs.androidx.test.core.ktx)
+    testImplementation(libs.androidx.test.ext.junit.ktx) // For AndroidX JUnit runner extensions
+    testImplementation(libs.androidx.media3.test.utils) // For Media3 testing utilities
+    testImplementation(libs.androidx.arch.core.testing) // For InstantTaskExecutorRule, useful for LiveData/ViewModels
+    testImplementation(libs.kotlinx.coroutines.test) // For testing coroutines
 }
